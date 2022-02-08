@@ -1,7 +1,4 @@
-
-<img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" align="left" />
-
-# DokuWiki 🤝 Docker <img align="right" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="Docker" width="70px" />
+# <img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" align="left" /> DokuWiki 🤝 Docker <img align="right" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="Docker" width="70px" />
 
 ### A dockerized Set-up for DokuWiki development
 
