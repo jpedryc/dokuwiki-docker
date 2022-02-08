@@ -1,4 +1,10 @@
-# ![DokuWiki Logo](https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png "Dokuwiki") DokuWiki Docker
+<div style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 40px;">
+<img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" /> 
+<div style="margin: 0 20px; font-size: 45px;">🤝</div>
+<img src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="Docker" width="70px" />
+</div>
+
+
 ### A dockerized Set-up for DokuWiki development
 
 This Set-up was created to make development around DokuWiki easier and more maintainable. Just fork the original repo 
