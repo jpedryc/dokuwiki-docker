@@ -40,13 +40,13 @@ Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard
 ([DokuWiki - Unit Testing](https://www.dokuwiki.org/devel:unittesting)). You can do it by:  
 `docker-compose exec app bash -c 'cd _test; php fetchphpunit.php'`
 
-**To run all tests:**  
+* To run all tests:  
 `docker-compose exec app bash -c 'cd _test; php phpunit.phar'`
 
-**To run just a single file test:**  
+* To run just a single file test:  
 `docker-compose exec app bash -c 'cd _test; php phpunit.phar tests/inc/input.test.php'`
 
-Accordingly, to the original documentation, you should be able to cover all cases.
+Accordingly, to the original documentation, you should be able to cover all other cases.
 
 #### BrowserStack
 
@@ -67,8 +67,8 @@ Accordingly, to the original documentation, you should be able to cover all case
 ⚠ These two files will be recognised by git as new files by default in the original (forked) repo. You can locally 
 ignore them by adding their paths to _.git/info/exclude_.
 
-**To check a single file:**  
+* To check a single file:  
 `docker-compose exec app bash -c 'cd _test; php phpcs.phar ../feed.php'`
 
-**To try fixing it:**  
+* To try fixing it:  
 `docker-compose exec app bash -c 'cd _test; php phpcbf.phar ../feed.php'`
