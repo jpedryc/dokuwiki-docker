@@ -2,7 +2,7 @@
 
 # DokuWiki 🤝 Docker  
 
-## A dockerized setup for DokuWiki development
+###### A dockerized setup for DokuWiki development
 
 This setup was created to make development around DokuWiki easier and more maintainable. Just fork the original repo 
 [splitbrain/dokuwiki](https://github.com/splitbrain/dokuwiki) and start playing around 🚀
