@@ -1,24 +1,24 @@
 # <img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" align="left" /> DokuWiki 🤝 Docker <img align="right" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="Docker" width="70px" />
 
-### A dockerized setup for DokuWiki development
+## A dockerized setup for DokuWiki development
 
 This setup was created to make development around DokuWiki easier and more maintainable. Just fork the original repo 
 [splitbrain/dokuwiki](https://github.com/splitbrain/dokuwiki) and start playing around 🚀
 
 ###### 🧱 PHP 7.4 FPM | Composer (latest) | Xdebug (latest) | Nginx 1.8 Alpine
 
-#### Prerequisites
+### Prerequisites
 1. Make sure you have docker & docker-compose set-up.
 2. Add `127.0.0.1 dokuwiki.local` in your _/etc/hosts_.   
    ℹ This is optional - you can customize the hostname in _server/dokuwiki.conf_
 3. Create an _.env_ file and set up environmental variables accordingly.  
    ⤷ `cp .env.example .env`
 
-#### First run
+### First run
 
 Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard DokuWiki install process.
 
-#### Xdebug in PHP Storm
+### Xdebug in PHP Storm
 
 ###### Xdebug Port Settings
 ![Xdebug Port Settings](_assets/xdebug.png "Xdebug")
@@ -26,9 +26,9 @@ Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard
 ###### Server Path Mappings
 ![Server Path Mappings](_assets/server.png "Path Mappings")
 
-#### Testing
+### Testing
 
-##### Unit Testing
+#### Unit Testing
 
 ℹ Before running any tests, you should fetch [PHPUnit](https://phpunit.de/) 
 ([DokuWiki - Unit Testing](https://www.dokuwiki.org/devel:unittesting)). You can do it by:  
@@ -42,13 +42,13 @@ Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard
 
 Accordingly, to the original documentation, you should be able to cover all cases.
 
-##### BrowserStack
+#### BrowserStack
 
 🚧 🚧 🚧
   
-#### Coding Style
+### Coding Style
 
-##### PHP_CodeSniffer
+#### PHP_CodeSniffer
 
 ℹ Before running any code style checks, you should fetch 
 [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer). You can do it by:
