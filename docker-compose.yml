@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+      args:
+        user: $USER
+        uid: $UID
+    image: dokuwiki
+    container_name: dokuwiki-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    volumes:
+      - $DOKUWIKI_SRC:/var/www
+      - ./app/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./app/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    networks:
+      - dokuwiki_network
+
+  server:
+    image: nginx:1.8-alpine
+    container_name: dokuwiki-server
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - $DOKUWIKI_SRC:/var/www
+      - ./server/dokuwiki.conf:/etc/nginx/conf.d/dokuwiki.conf
+    networks:
+      - dokuwiki_network
+
+networks:
+  dokuwiki_network:
+    driver: bridge
+
