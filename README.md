@@ -14,9 +14,13 @@ This setup was created to make development around DokuWiki easier and more maint
 3. Create an _.env_ file and set up environmental variables accordingly.  
    ⤷ `cp .env.example .env`
 
+--- 
+
 ### First run
 
 Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard DokuWiki install process.
+
+--- 
 
 ### Xdebug in PHP Storm
 
@@ -25,6 +29,8 @@ Go to [/install.php](http://dokuwiki.local/install.php) and perform the standard
 
 ###### Server Path Mappings
 ![Server Path Mappings](_assets/server.png "Path Mappings")
+
+---  
 
 ### Testing
 
@@ -46,6 +52,8 @@ Accordingly, to the original documentation, you should be able to cover all case
 
 🚧 🚧 🚧
   
+---  
+
 ### Coding Style
 
 #### PHP_CodeSniffer
