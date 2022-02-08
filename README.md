@@ -1,9 +1,11 @@
-<div style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 40px;">
-<img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" /> 
-<div style="margin: 0 20px; font-size: 45px;">🤝</div>
+<div>
+<img src="https://www.dokuwiki.org/lib/tpl/dokuwiki/images/logo.png" width="60px" alt="DokuWiki" style="float: left;" /> 
+<div style="float: left; margin: 0 20px; font-size: 45px;">🤝</div>
 <img src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png" alt="Docker" width="70px" />
 </div>
+<div style="clear: both;"></div>
 
+---
 
 ### A dockerized Set-up for DokuWiki development
 
