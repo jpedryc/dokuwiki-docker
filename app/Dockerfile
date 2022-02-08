@@ -3,10 +3,12 @@ FROM php:7.4-fpm
 ARG user
 ARG uid
 
-# Install system dependencies
+# Update & install system dependencies
 RUN apt-get update
 
-# Install & enable xDebug
+RUN apt-get install -y git wget
+
+# Install & enable Xdebug
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
 
