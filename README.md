@@ -81,5 +81,5 @@ ignore them by adding their paths to _.git/info/exclude_.
 
 Additional commands were added for easier DokiWiki handling:
 
-* Reinstall DokuWiki (without lossing data)  
+* Reinstall DokuWiki (without loosing data)  
   `make reinstall`
