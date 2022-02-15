@@ -75,6 +75,8 @@ ignore them by adding their paths to _.git/info/exclude_.
 * To try fixing it:  
 `docker-compose exec app bash -c 'cd _test; php phpcbf.phar ../feed.php'`
 
+---  
+
 ### Makefile
 
 Additional commands were added for easier DokiWiki handling:
